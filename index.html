@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/codoacodo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Tarea2 - Bootstrap</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/codoacodo.png" alt="Logo de Codo a Codo" width="40" height="24" class="d-inline-block align-text-top">
+                    Codo a Codo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Links importantes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Opciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Últimas Novedades</a></li>
+                        <li><a class="dropdown-item" href="#">Nuestros Cursos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Próximos Eventos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contactanos</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="cursos">
+            <div class="container-fluid p-5">
+                <div class="row flexbox">
+                    <div class="card col-sm-12 col-md-4 col-lg-4 col-xl-4 p0">
+                        <img src="./assets/html.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de la Web. Define el significado y la estructura del contenido web.</p>
+                            <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-4 col-xl-4 p0">
+                        <img src="./assets/css.jpg" class="card-img-top" alt="logo css">
+                        <div class="card-body">
+                            <h5 class="card-title">CSS</h5>
+                            <p class="card-text">Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o describe como debe ser renderizado el elemento estructurado en la pantalla, en papel, en el habla o en otros medios.</p>
+                            <p class="card-text"><small class="text-muted">Última actualización hace 1 hora</small></p>
+                        </div>
+                    </div>
+                    <div class="card  col-sm-12 col-md-4 col-lg-4 col-xl-4 p0">
+                        <img src="./assets/bootstrap.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">BOOTSTRAP</h5>
+                            <p class="card-text">Bootstrap es una biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web. Actualmente se encuentra en su versión número 5</p>
+                            <p class="card-text"><small class="text-muted">Última actualización hace 5 minutos</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="formulario p-5">
+            <form class="p-4 bg-warning bg-gradient rounded border border-secondary">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Nunca compratiremos tu correo electrónico con nadie.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Validar</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+        
+        
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
